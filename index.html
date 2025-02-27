@@ -3,23 +3,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Page Resume</title>
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
 
   <body>
+    <div class="dark-box">
     <header>
       <div>
         <h1 class="fn">C'thulhu</h1>
 
-        <p>
-          Phone: <span class="tel">555-666-7777</span><br />
-          Email:
-          <a href="mailto:greatoldone@lovecraft.com"
-            >greatoldone@lovecraft.com</a
-          >
+        <p class="contact-info">
+          Phone: 555-666-7777<br />
+          Email: <span class="email">greatoldone@lovecraft.com</span>
         </p>
 
         <section id="objective">
@@ -32,66 +30,77 @@
           </p>
         </section>
       </div>
-      <div id="pic">... change this and show your photo</div>
+
+      <div id="pic">
+        <img src="tulhu2.png" alt="Tulhu foto">
+    </div>
     </header>
+  </div>
 
-    <main>
-      <dl>
-        <dt>Education</dt>
-        <dd>
-          <h2>Withering Madness University - Planet Vhoorl</h2>
-          <p>
-            <strong>Major:</strong> Public Relations<br />
-            <strong>Minor:</strong> Scale Tending
-          </p>
-        </dd>
+  <main>
+    <dl>
+      <div class="dt-dd-container"></div>
+      <dt><b>Education</b></dt>
+      <dd>
+        <h2>Withering Madness University - Planet Vhoorl</h2>
+        <p>
+          <strong>Major:</strong> Public Relations<br />
+          <strong>Minor:</strong> Scale Tending
+        </p>
+      </dd>
 
-        <dt>Skills</dt>
-        <dd>
-          <h2>Office skills</h2>
-          <p>
-            Office and records management, database administration, event
-            organization, customer support, travel coordination
-          </p>
+      <div class="dt-dd-container"></div>
+      <dt><b>Skills</b></dt>
+      <dd>
+        <h2>Office skills</h2>
+        <p>
+          Office and records management, database administration, event
+          organization, customer support, travel coordination
+        </p>
+  
+        <h2>Computer skills</h2>
+        <p>
+          Microsoft productivity software (Word, Excel, etc), Adobe Creative
+          Suite, Windows
+        </p>
+      </dd>
+  
+      <div class="dt-dd-container"></div>
+      <dt><b>Experience</b></dt>
+      <dd>
+        <h2>
+          Doomsday Cult
+          <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span>
+        </h2>
+        <ul>
+          <li>
+            Inspired and won highest peasant death competition among servants
+          </li>
+          <li>Helped coordinate managers to grow cult following</li>
+          <li>Provided untimely deaths to all who opposed</li>
+        </ul>
+  
+        <h2>
+          The Watering Hole
+          <span>Bartender/Server - Milwaukee, WI - 2009</span>
+        </h2>
+        <ul>
+          <li>Worked on grass-roots promotional campaigns</li>
+          <li>Reduced theft and property damage percentages</li>
+          <li>Janitorial work, Laundry</li>
+        </ul>
+      </dd>
 
-          <h2>Computer skills</h2>
-          <p>
-            Microsoft productivity software (Word, Excel, etc), Adobe Creative
-            Suite, Windows
-          </p>
-        </dd>
+      <div class="dt-dd-container"></div>
+         <dt><b>Hobbies</b></dt>
+          <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
+    
 
-        <dt>Experience</dt>
-        <dd>
-          <h2>
-            Doomsday Cult
-            <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span>
-          </h2>
-          <ul>
-            <li>
-              Inspired and won highest peasant death competition among servants
-            </li>
-            <li>Helped coordinate managers to grow cult following</li>
-            <li>Provided untimely deaths to all who opposed</li>
-          </ul>
-
-          <h2>
-            The Watering Hole
-            <span>Bartender/Server - Milwaukee, WI - 2009</span>
-          </h2>
-          <ul>
-            <li>Worked on grass-roots promotional campaigns</li>
-            <li>Reduced theft and property damage percentages</li>
-            <li>Janitorial work, Laundry</li>
-          </ul>
-        </dd>
-
-        <dt>Hobbies</dt>
-        <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
-
-        <dt>References</dt>
-        <dd>Available on request</dd>
-      </dl>
-    </main>
+      <div class="dt-dd-container"></div>
+      <dt><b>References</b></dt>
+      <dd>Available on request</dd>
+      
+    </dl>
+  </main>
   </body>
 </html>

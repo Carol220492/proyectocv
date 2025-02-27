@@ -3,26 +3,174 @@
   padding: 0;
 }
 body {
-  font: 16px Helvetica, Sans-Serif;
-  line-height: 24px;
-  width: 800px;
+  font: 16px Open, Sans-Serif;
+  line-height: 20px;
+  max-width: 800px;
   margin: 40px auto 60px;
+  padding: 10px;
 }
 
 header {
   display: grid;
   grid-template-columns: 1fr auto;
+  gap: 20px;
+  padding: 5%;
 }
 
-dl {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 1rem;
-}
-
-#pic {
-  width: 200px;
-  height: 250px;
-  border: 1px solid #999;
+header #pic {
+  width: 100%;
+  max-width: 200px; /* Añadido max-width */
+  height: 100%;
   padding: 1rem;
 }
+
+header #pic img {
+  max-width: 100%;
+  height: auto;
+  display: grid
+}
+.profile-pic {
+  width: 50%; /* Establece el ancho de la imagen */
+  padding: left 3px;
+}
+
+.dark-box {
+  background-color: #333; /* Gris oscuro (puedes ajustar el valor) */
+  color: #eee; /* Texto en gris claro para mejor contraste */
+  padding: 15px; /* Ajusta el relleno según sea necesario */
+  margin: 40px auto 40px auto; /* Centra el recuadro horizontalmente */
+  width: 95%; /* Ajusta el ancho para que sea más horizontal */
+  max-width: 900px; /* Limita el ancho máximo si es necesario */
+  box-sizing: border-box; /* Asegura que el relleno y el borde se incluyan en el ancho total */
+  display: inline-block; /* para que el ancho se adapte al contenido */
+}
+
+h1.fn {
+  font-size: 2.5em; /* Aumenta el tamaño de la fuente (puedes ajustar el valor) */
+  border-bottom: 2px solid rgb(189, 188, 187); /* Línea continua debajo */
+  padding-bottom: 10px; /* Espacio entre el texto y la línea */
+}
+
+.dark-box a {
+  color: #89cff0; /* Color para los enlaces, puedes ajustarlo */
+}
+.dark-box .contact-info {
+  color: rgb(255, 247, 247); /* Gris claro con transparencia */
+  padding-bottom: 5px; /* Espacio debajo de la línea */
+}
+
+.dark-box .contact-info .email {
+  color: rgba(200, 200, 200, 0.5); /* Gris claro con transparencia */
+  border-bottom: 1px dashed rgba(200, 200, 200, 0.5); /* Línea discontinua gris claro */
+}
+
+
+#objective p {
+  font-style: italic; /* Cursiva */
+  color: #e2dcdc; /* Gris oscuro (puedes ajustar el valor) */
+}
+
+.dark-box p {
+  margin: 10px 0; /* 5px arriba y abajo, 0 a los lados */
+}
+
+main dl {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Divide en dos columnas */
+  gap: auto; /* Espacio entre columnas */
+}
+
+h2, dt {
+  color: #bc6905; /* Naranja oscuro (puedes ajustar el valor) */
+}
+
+span {
+  color: rgba(200, 200, 200, 0.5); /* Gris claro con transparencia */
+}
+
+
+main dt {
+  grid-column: 1 / 2;
+  padding-left: 10px;
+  border-right: 3px solid orange; /* Línea vertical, más gruesa y menos discontinua */
+  border-bottom: none; /* Elimina la línea horizontal */
+  margin-bottom: 0; /* Elimina el margen inferior */
+  padding-bottom: 10px; /* Añade relleno inferior para simular el espacio */
+}
+
+
+main dd {
+  grid-column: 2 / 3;
+  margin-bottom: 5px;
+  border-bottom: none; /* Elimina la línea horizontal */
+  padding-left: 10px; /* Añade relleno izquierdo para simular el espacio */
+  line-height: 3; /* Puedes ajustar este valor según tus preferencias */
+}
+
+
+/* Aplicar el borde al contenedor */
+.dt-dd-container {
+  margin-bottom: 20px; /* Espacio entre contenedores */
+  padding-bottom: 10px; /* Espacio entre el contenido y la línea */
+}
+
+
+dd { /* Añadido para ajustar el margen inferior */
+  margin-bottom: 20px; /* Ajusta este valor según sea necesario */
+}  
+
+/* Elimina la última línea para References */
+main dl dt:last-child, main dl dd:last-child {
+  border-right: none;
+  border-left: none;
+}
+
+
+/* Ajustar los puntos de las <li> */
+main ul li {
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+
+
+/* Estilos generales (mobile-first) */
+@media (min-width: 200px) and (max-width: 780px) {
+
+  body {
+    font: 16px Open, Sans-Serif;
+    line-height: 30px;
+    padding: 20px;
+  }
+  
+  .dark-box {
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+  
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  header #pic {
+    width: 150px;
+    height: 200px;
+  }
+  
+    dl {
+      display: block; 
+    }
+  
+    dt, dd {
+      width: 100%; /* Asegura que ocupen todo el ancho */
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    dt {
+      border-bottom: 3px solid orange;
+      border-right: none;
+    }
+  }
