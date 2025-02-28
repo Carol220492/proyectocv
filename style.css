@@ -173,4 +173,11 @@ main ul li {
       border-bottom: 3px solid orange;
       border-right: none;
     }
+
+/* Ajustar los puntos de las <li> */
+    main ul li {
+      padding-left: 20px;
+      margin-left: 10px;
+    }
+
   }
