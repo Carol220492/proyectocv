@@ -172,11 +172,5 @@ main ul li {
     #dt {
       border-bottom: 3px solid orange;
       border-right: none;
-      padding-left: 5%;
-      margin-left: 5%;
-    }
-
-    .ul li{
-      margin-right: 5%;
-    }
   }
+}
