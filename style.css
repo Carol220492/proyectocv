@@ -172,6 +172,8 @@ main ul li {
     dt {
       border-bottom: 3px solid orange;
       border-right: none;
+      padding-right: 2%;
+      margin-right: 2%;
     }
 
     main ul li {
