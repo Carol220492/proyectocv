@@ -175,7 +175,7 @@ main ul li {
     }
 
     main ul li {
-      padding-left: left;
-      margin-left: left;
+      padding: right;
+      margin-right:auto;
     }
   }
