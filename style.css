@@ -172,12 +172,12 @@ main ul li {
     dt {
       border-bottom: 3px solid orange;
       border-right: none;
-      padding-right: 2%;
-      margin-right: 2%;
+      padding-left: 2%;
+      margin-left: 2%;
     }
 
     main ul li {
-      padding-left: 2%;
-      margin-left: 2%;
+      padding-right: 2%;
+      margin-right: 2%;
     }
   }
