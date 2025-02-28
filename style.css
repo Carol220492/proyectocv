@@ -174,10 +174,8 @@ main ul li {
       border-right: none;
     }
 
-/* Ajustar los puntos de las <li> */
     main ul li {
-      padding-left: 20px;
-      margin-left: 10px;
+      padding-left: left;
+      margin-left: left;
     }
-
   }
